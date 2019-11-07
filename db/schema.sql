@@ -4,6 +4,7 @@ drop table if exists parts;
 drop table if exists customers;
 drop table if exists build_parts_xref;
 drop table if exists categories;
+drop table if exists prefabs;
 
 create table builds
 (
@@ -17,16 +18,21 @@ create table builds
 create table parts
 (
 	id int not null AUTO_INCREMENT,
-	name varchar(150),
-	cost double(12, 2),	
-    categoryId varchar(150),
+	#name varchar(255),
+	name text,
+	cost double(12, 2) default null,	
+    categoryId int,
+    img_url varchar(250) null,
 	primary key (id)
 );
 
-create table prefabs(
+#permalinks
+create table prefabs
+(
     id int not null AUTO_INCREMENT,
     name varchar(150),
     permalink varchar(350),
+    visited bool not null default false,
     primary key (id)
 );
 
@@ -52,5 +58,6 @@ create table customers(
 	id int not null auto_increment,
 	name varchar(150),
     email varchar(150),
+   password varchar(255) not null,
 	primary key (id)
 );

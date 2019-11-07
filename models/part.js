@@ -1,5 +1,5 @@
-module.exports = function (sequelize, DataTypes) {
-    var Part = sequelize.define("Part", {
+module.exports = function(sequelize, DataTypes) {
+    var part = sequelize.define("part", {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -15,8 +15,12 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+        img_url: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
     }, {
         timestamps: false
     });
-    return Part;
+    return part;
 };
