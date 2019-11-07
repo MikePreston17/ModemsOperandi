@@ -4,3 +4,22 @@ integrate api data
 add parts routes
 update routes on builds
 new
+
+Dropdown menu
+
+parts to select from
+5 for each
+
+page for each categories
+CPU
+Motherboard
+Memory
+Storage
+Video Card	
+Case
+Power Supply	
+select button for each adds to user db
+seperate database user 
+Able to click and select and add to build any part
+
+Mysql workbench local host database
