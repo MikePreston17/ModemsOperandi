@@ -12,7 +12,6 @@ var session = require("express-session");
 var passport = require("passport");
 var bodyParser = require("body-parser");
 
-
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -21,7 +20,7 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(
   express.urlencoded({
-      extended: true
+    extended: true
   })
 );
 app.use(express.json());
@@ -60,8 +59,12 @@ var syncOptions = {
   force: false
 };
 
-db.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function() {
+/* NOTE: Commented this out b/c I could not get it to work when no sqlserver exists. 
+*
+*/
+
+db.sequelize.sync(syncOptions).then(function () {
+  app.listen(PORT, function () {
     console.log("App listening on http://localhost:" + PORT);
   });
 });

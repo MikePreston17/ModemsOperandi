@@ -1,6 +1,8 @@
-let {
-    isUnderBudget,
-    automatedBuild
-} = require('../core/utils');
+const expect = require('chai').expect;
 
-// var static_build = 
+describe.skip('Can create a Budget', () => {
+
+    it("Should give a budget", () => {
+        //TODO: implement using the Neo4j path algorithms in controllers
+    })
+})

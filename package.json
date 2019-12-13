@@ -6,10 +6,7 @@
     "extensionDependencies": [
         "esbenp.prettier-vscode"
     ],
-    "scripts": {
-        "test": "mocha"
-    },
-    "author": "ScottW, Daniel Reynolds, Byron Roberts, Michael Preston",
+    "author": "Scott Wagner, Daniel Reynolds, Byron Roberts, Michael Preston",
     "license": "ISC",
     "dependencies": {
         "bcrypt-nodejs": "0.0.3",
@@ -23,16 +20,18 @@
         "passport": "^0.4.0",
         "passport-local": "^1.0.0",
         "path": "^0.12.7",
-        "sequelize": "^4.42.0"
+        "sequelize": "^4.42.0",
+        "typescript": "^3.7.2"
     },
     "devDependencies": {
         "chai": "^4.2.0",
         "chai-http": "^4.2.1",
-        "mocha": "^5.2.0",
-        "prettier": "^1.15.3",
         "eslint": "^5.12.0",
         "eslint-config-prettier": "^3.3.0",
-        "eslint-plugin-prettier": "^3.0.1"
+        "eslint-plugin-prettier": "^3.0.1",
+        "mocha": "^6.2.2",
+        "nodemon": "^2.0.1",
+        "prettier": "^1.15.3"
     },
     "repository": {
         "type": "git",
@@ -41,5 +40,8 @@
     "bugs": {
         "url": "https://github.com/ScottW1731/ModemsOperandi/issues"
     },
-    "homepage": "https://github.com/ScottW1731/ModemsOperandi#readme"
+    "homepage": "https://github.com/ScottW1731/ModemsOperandi#readme",
+    "scripts": {
+        "test": "mocha"
+    }
 }
